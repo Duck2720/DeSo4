@@ -859,6 +859,7 @@ body {
   }
   .main-content .columns .newsletter .newsletter-title {
     margin-bottom: 180px;
+    margin-top: 50px;
   }
   .main-content .columns .newsletter-inner .newsletter-description {
     width: auto;
@@ -1041,6 +1042,7 @@ body {
   .main-content .columns .newsletter .newsletter-title {
     font-size: 20px;
     margin-bottom: 180px;
+    margin-top: 40px;
   }
   .main-content .columns .newsletter-inner .newsletter-description {
     font-size: 10px;
