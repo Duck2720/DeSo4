@@ -1,0 +1,63 @@
+.cover {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    background: #000;
+    opacity: 0;
+    z-index: 100;
+    display: none;
+}
+.cover.active {
+    opacity: .8;
+    display: block;
+}
+
+.header {
+        position: fixed;
+        color: #fff;
+        font-size: 16px;
+        z-index: 999;
+        width: 100vw;
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #000;
+            opacity: .55    ;
+        }
+        .logo-mobile {
+            text-align: center;
+            display: none;
+        }
+        &-inner {
+            position: relative;
+            height: 100px;
+            @include flex();
+            .nav-icon {
+                display: none;
+            }
+            .logo {
+                width: 200px;
+            }
+            .navbar {
+                .nav-title {
+                    display: none;
+                }
+                @include flex-row();
+                padding-left: 30px;
+                a {
+                    color: #fff;
+                    padding-right: 53px ;
+                    cursor: pointer;
+                }
+            }
+            .menu {
+                @include flex-row();
+                i, span {
+                    padding-left: 25px;
+                }
+            }
+        }
+}
